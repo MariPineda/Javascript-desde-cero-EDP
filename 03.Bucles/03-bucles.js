@@ -22,7 +22,11 @@ function sumandoTodo(num){
 // Realiza un algoritmo que el cual recorra del 0 al numero pasado por parametros, debes retornar la suma de todo los
 // numeros que se recorrio
 // Tu código:👇
-
+let acumulador = 0;
+for (let i = 0; i <= num; i++) {
+    acumulador += 1
+}
+return acumulador
 }
 
 function BinarioADecimal(num) {
