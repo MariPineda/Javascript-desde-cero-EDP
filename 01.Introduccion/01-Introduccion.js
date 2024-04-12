@@ -29,6 +29,14 @@ const nuevaMultiplicacion = 19 * 4 === 76; // Cambiar null por el valor correspo
 
 const nuevoModulo = 18 % 5 === 3; // Cambiar null por el valor correspondiente
 
+
+console.log(num)
+console.log(cadena)
+console.log(logico)
+console.log(vacio)
+console.log(nuevaResta)
+console.log(nuevaMultiplicacion)
+console.log(nuevoModulo)
 //_________________________________________
 
 

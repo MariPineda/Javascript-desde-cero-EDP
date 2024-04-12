@@ -14,7 +14,7 @@ function verificarNumero(numero){
         return ("Es igual a cero");
     }
 }
-
+console.log(verificarNumero(5))
 
 function esBisiesto(anio){
     // Escribe un programa que determine si un año es bisiesto o no. (true o false)
@@ -27,6 +27,7 @@ function esBisiesto(anio){
         return("El año " + anio + " no es bisiesto");
     }
 }
+console.log(esBisiesto(2024))
 
 function verificarCalificacion(calificacion){
     // Escribe un programa que determine si un estudiante aprobó o reprobó un examen.
@@ -41,6 +42,7 @@ function verificarCalificacion(calificacion){
         return ("Reprobó");
     }
 }
+console.log(verificarCalificacion(65))
 
 function esMayor(num1, num2, num3){
     // Escribe un programa que determine el mayor de tres números dados.
@@ -48,18 +50,18 @@ function esMayor(num1, num2, num3){
     // Tu código 👇:
     if (num1 > num2 && num1 > num3) {
         return("El número 1 es el mayor.");
-      } else if (num2 > num1 && num2 > num3) {
+    } else if (num2 > num1 && num2 > num3) {
         return("El número 2 es el mayor.");
-      } else {
-        return("El número 3 es el mayor.");
-      }
+    } else {
+        return("El número en la posición 3 es el mayor.");
+    }
 }
+console.log(esMayor(5,4,9))
 
 function esPrimo(num){
     // Escribe un programa que determine si un número dado es primo.
     // Devolver true o false
     // Tu código 👇:
-
 }
 
 module.exports = {
