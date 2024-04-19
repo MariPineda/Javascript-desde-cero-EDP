@@ -5,6 +5,31 @@
 // caso contrario se le indica que no puede inscribirse y la razón.
 // Tu codigo 👇:
 
+let edad = prompt ("Ingrese su edad: ")
+console.log(edad)
+if ( edad >= 18){
+        console.log(" Puede inscribirse en el curso")
+}
+else {
+        console.log ("No puede inscribirse en el curso")
+}
+
+
+const edadUsuario = window.prompt("Por favor, ingresa tu edad:");
+if (edadUsuario !== null) {
+        const edadNumerica = parseInt(edadUsuario, 10);
+        if (!isNaN(edadNumerica)) {
+                if (edadNumerica >= 18) {
+                        console.log("¡Puedes inscribirte!");
+                } else {
+                        console.log("Lo siento, no puedes inscribirte debido a que eres menor de 18 años.");
+                }
+        } else {
+        console.log("Por favor, ingresa una edad válida (número entero).");
+        }
+} else {
+        console.log("Has cancelado la entrada de tu edad.");
+}
 
 //_________________________________________
 
@@ -17,6 +42,20 @@
 // Calificación entre 60 y 69: "Suficiente"
 // Calificación menor a 60: "Insuficiente"
 // Tu codigo 👇:
+let calificacion = prompt ("Ingrese su calificación: ")
+console.log(calificacion)
+if ( calificacion >= 90){
+        console.log(" Excelente")
+}
+else if ( calificacion >= 70 && calificacion < 90){
+        console.log ("Bueno")
+}
+else if ( calificacion >= 60 && calificacion < 70){
+        console.log ("Suficiente")
+}
+else if ( calificacion < 60 ){
+        console.log ("Insufucuente")
+}
 
 
 //_________________________________________
@@ -26,6 +65,14 @@
 // Ejercicio N° 2:
 // Escribe un programa que solicite al usuario ingresar un número entero y luego determine si es par o impar.
 // Tu codigo 👇:
+let numusuario = prompt ("Ingrese un número: ")
+console.log(numusuario)
+if (numusuario % 2 == 0 ){
+        console.log(" El número es par")
+}
+else {
+        console.log(" El número es impar")
+}
 
 
 //_________________________________________
@@ -36,8 +83,29 @@
 // Escribe un programa que solicite al usuario ingresar un número del 1 al 7 representando un día de la semana, y luego imprima el nombre del día correspondiente.
 // Por ejemplo, si el usuario ingresa 1, el programa debe imprimir "Lunes".
 // Tu codigo 👇:
-
-
+let diasemana = prompt ("Ingrese un número del 1 al 7 representando el día de la semana. Siendo 1 el día lunes: ")
+console.log(diasemana)
+if ( diasemana == 1){
+        console.log("'Lunes'")
+}
+else if ( diasemana == 2){
+        console.log ("'Martes'")
+}
+else if ( diasemana == 3){
+        console.log ("'Miércoles'")
+}
+else if ( diasemana == 4 ){
+        console.log ("'Jueves'")
+}
+else if ( diasemana == 5 ){
+        console.log ("'Viernes'")
+}
+else if ( diasemana == 6 ){
+        console.log ("'Sábado'")
+}
+else if ( diasemana == 7 ){
+        console.log ("'Domingo'")
+}
 //_________________________________________
 
 
@@ -47,7 +115,16 @@
 // Si la antigüedad es mayor o igual a 5 años, y el salario es menor a $500,
 // el programa debe imprimir un mensaje que indique que el empleado es elegible para una bonificación del 10% de su salario actual.
 // Tu codigo 👇:
-
+let antiguedad = prompt ("Ingrese sus años de antiguedad: ")
+console.log(antiguedad);
+let salario = prompt ("Ingrese su salario actual: ")
+console.log(salario);
+if ( antiguedad >= 5 && salario < 500){
+        console.log("Usted es elegible para una bonificación del 10% de su salario actual")
+}
+else{
+        console.log ("Usted no es elegible para una bonificación del 10% de su salario actual")
+}
 
 //_________________________________________
 
@@ -58,7 +135,17 @@
 // Entre 18 y 65 años: "Adulto"
 // Mayor de 65 años: "Senior"
 // Tu codigo 👇:
-
+let edadanios = prompt ("Ingrese sus edad: ")
+console.log(edadanios)
+if ( edadanios < 18 ){
+        console.log("Usted es menor de edad")
+}
+else if ( edadanios >= 18 && edadanios <= 65 ){
+        console.log("Usted es adulto")
+}
+else if ( edadanios > 65 ){
+        console.log("Usted es senior")
+}
 
 //_________________________________________
 

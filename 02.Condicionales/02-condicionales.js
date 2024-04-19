@@ -11,7 +11,7 @@ function verificarNumero(numero){
     }
 
     else{
-        return ("Es igual a cero");
+        return ("Es cero");
     }
 }
 console.log(verificarNumero(5))
@@ -21,10 +21,10 @@ function esBisiesto(anio){
     // Un año es bisiesto si es divisible entre 4, excepto aquellos que son divisibles entre 100 pero no entre 400.
     // Tu código 👇:
     if ((anio % 4 === 0 && anio % 100 !== 0) || (anio % 100 === 0 && anio % 400 === 0)){
-        return("El año " + anio + " es bisiesto");
+        return(true);
     }
     else {
-        return("El año " + anio + " no es bisiesto");
+        return(false);
     }
 }
 console.log(esBisiesto(2024))
@@ -49,11 +49,11 @@ function esMayor(num1, num2, num3){
     // Devolver el numero mayor
     // Tu código 👇:
     if (num1 > num2 && num1 > num3) {
-        return("El número 1 es el mayor.");
+        return(num1);
     } else if (num2 > num1 && num2 > num3) {
-        return("El número 2 es el mayor.");
+        return(num2);
     } else {
-        return("El número en la posición 3 es el mayor.");
+        return(num3);
     }
 }
 console.log(esMayor(5,4,9))
@@ -62,7 +62,13 @@ function esPrimo(num){
     // Escribe un programa que determine si un número dado es primo.
     // Devolver true o false
     // Tu código 👇:
+    for (let i = 2; i < num; i++)
+        if (num % i === 0 ) {
+            return false;
+    }
+    return num !== 1;
 }
+console.log(esPrimo(4))
 
 module.exports = {
     verificarCalificacion,

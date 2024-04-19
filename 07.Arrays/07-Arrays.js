@@ -1,28 +1,35 @@
 function primerElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el primer elemento
     // tu código:
-
+    return arg[0]
 }
+primerElemento(["Hola", "Chau", "Buenas noches"])
 
 function ultimoElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el ultimo elemento
     // tu código aqui:
-
+    return (arg.at (-1))
 }
+ultimoElemento(["Hola", "Chau", "Buenas noches"])
 
 function nuevoArray(arg){
     //dado el array pasado por parametro retorna su longitud
     // tu código aqui:
-
+    return arg.length
 }
+nuevoArray(["Hola", "Chau", "Buenas tardes", "Buenas noches"])
 
 function changeArray(arr){
     //dado el array pasado por parametro, cambia el valor del primero elemento por 'Aprendiendo' y
     //el ultimo elemento por 'array'
     //retorna el nuevo valor
     // tu código aqui:
-
+    arr[0] = "Aprendiendo";
+    arr.pop(); 
+    arr.push("array");
+    return arr
 }
+changeArray(["Hola", "Chau", "Buenas tardes", "Buenas noches"])
 
 function primerasCondicionales(arg){
     // pasados los array por parametros tendras que devolver según lo que corresponda:
@@ -31,29 +38,62 @@ function primerasCondicionales(arg){
     // longitud de array menor que 3 retornar: 'Este array es menor a 3'
     // longitud de array igual a 0 retornar: 'Este array no contiene elementos'
     // tu código aqui:
-    
+    for (let key in arg){
+        if(key.length > 3){
+            return `${key}Este array es mayor a 3`
+        }
+    }
+
 }
+
+primerasCondicionales([[3,2],[4,5,6,7], [], [998]] )
 
 function sumandoEnUno(arg){
     // dado el array de numeros enteros pasado por parametro, a cada elemento del array
     // tienes que sumarle 1.. ejemplo: [4 , 5, 6] -> [5 , 6, 7] 
     // tu código aqui:
-
+    const argsumados = arg
+    argsumados.forEach (function (argsumado) {
+        console.log([argsumado + 1]);
+    })
 }
+sumandoEnUno([4,5,6])
+- **`forEach`**: Ejecuta una función para cada elemento del array.
+    
+    ```jsx
+    const numeros = [1, 2, 3, 4, 5];
+    numeros.forEach(function(numero) {
+      console.log(numero * 2);
+    });
+
 
 function valorMaximo(arr){
     //Se pasa un array de enteros, tendras que iterar por cada elemeto del array y encontrar el valor más alto y devolverlo
     //ejemplo -> [1 , 5, 4, 10, 99 ,2, 42, 3] - deberia devolver 99
     // Tu codigo:
-
+    let max = 0;
+    for ( let numero of arr ) {
+        if (max < numero)
+        max = numero;
+    }
+    return max;
 }
+valorMaximo([1 , 5, 4, 10, 99 ,2, 42, 3])
 
 function valorMinimo(arr){
     //Se pasa un array de enteros, tendras que iterar por cada elemeto del array y encontrar el valor más bajo y devolverlo
     //ejemplo -> [ 5, 4, 10, 99 ,2, 42, 3] - deberia devolver 2
     // Tu codigo:
-
+    let min = arr[0]; 
+    for(i=1;i<arr.length;i++){      
+        if(arr[i]<min){
+            (min=arr[i])
+        }
+    }
+return min;
 }
+valorMinimo([ 5, 4, 10, 99 ,2, 42, 3])
+
 
 function cantPares(arr){
     //Se para un array de enteros, tienes que iterar por los elementos y contar la cantidad de numeros que son pares

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    width: 300px;
+    height: 320px;
+    border: 2px solid grey;
+}
+#header-chat {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(207, 217, 217);
+    border-bottom: 2px solid grey;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#header-chat img {
+    width: 40px;
+}
+#header-chat h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(88, 87, 87);
+}
+#header-chat button{
+    width: 30%;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 100%;
+}
+#header-chat button:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+#header-chat small {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(199, 68, 68);
+}
+#contenedor-msj {
+    width: 100%;
+    overflow: scroll;
+    height: 200px;
+}
+.msj-bot {
+    background-color: rgb(207, 217, 217);
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller ;
+}
+.msj-persona {
+    background-color: rgb(200, 244, 244);
+    border-radius: 8px;
+    text-align: end;
+    padding: 8px;
+}
+.invisible{
+    display:none;
+}

@@ -25,7 +25,7 @@ let addColumn = false; // Variable que debe cambiar según -> Si existe la 4 col
 
 
 // BOTON DATOS ALUMNO => Deberia devolver la tabla de alumnos con los datos personales de cada alumno (nombre, apellido, dni).
-const btnDate = () =>{
+const btnDate = () =>{  
 
 }
     

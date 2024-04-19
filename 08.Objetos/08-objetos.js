@@ -49,8 +49,17 @@ function permisosDeEntrada(personas) {
     // si contiene entrada (true) y si es mayor de edad. agregar en un nuevo array, las personas que cumplan
     // el nuevo array debe contener unicamente el nombre de las personas
     // tu código:
+    for (let i = 0; i = personas.length; i++) {
+        if (personas[i].edad >= 18 && personas[i].entrada){
+        console.log(personas[i])
+    }
 
 }
+personas.map( persona => console.log(persona))
+
+const res = personas.map( persona => {
+    if(persona.edad >= 18) {} ? persona : false )
+console.log(res)
 
 //Crea un objeto "libro" con propiedades como título, autor y año de publicación. 
 //Luego, completa la función que toma ese objeto como argumento
