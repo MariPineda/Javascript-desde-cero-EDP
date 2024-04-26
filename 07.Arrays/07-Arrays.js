@@ -52,20 +52,12 @@ function sumandoEnUno(arg){
     // dado el array de numeros enteros pasado por parametro, a cada elemento del array
     // tienes que sumarle 1.. ejemplo: [4 , 5, 6] -> [5 , 6, 7] 
     // tu código aqui:
-    const argsumados = arg
-    argsumados.forEach (function (argsumado) {
-        console.log([argsumado + 1]);
+    arg.forEach (function (args) {
+        resultado = [args + 1];
+        return console.log(resultado)
     })
 }
 sumandoEnUno([4,5,6])
-- **`forEach`**: Ejecuta una función para cada elemento del array.
-    
-    ```jsx
-    const numeros = [1, 2, 3, 4, 5];
-    numeros.forEach(function(numero) {
-      console.log(numero * 2);
-    });
-
 
 function valorMaximo(arr){
     //Se pasa un array de enteros, tendras que iterar por cada elemeto del array y encontrar el valor más alto y devolverlo

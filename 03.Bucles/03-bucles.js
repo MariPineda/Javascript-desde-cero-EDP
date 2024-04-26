@@ -87,7 +87,7 @@ return unircadena
 }
 console.log(invertirCadena("Hola"))
 
-module.exports = {
+module.exports ={
     encuentraX,
     sumandoTodo,
     BinarioADecimal,

@@ -21,11 +21,18 @@ const pelis = document.querySelector('.peli') // Obtenemos sección de pelis. do
 
 //BOTON TODOS => Debe devolver todas las portadas (img) de las peliculas que hay.
 const allFilms = () => {
+    pelis.innerHTML += `<img src=${peli.img} alt="${peli.titulo}`
 
 }
 
 //BOTON ESTRENOS => Debe devolver las portadas (img) solo de las peliculas que esten en estreno 'estreno: true'
 const estrenos = () => {
+    pelis.insertAdjacentHTML('beforebegin',"")
+    peliculas.filter( peli => {
+        if(peli.estreno){
+            pelis.innerHTML += `<img src=${peli.img} alt="${peli.titulo}"`
+        }
+    })
 
 }
 
