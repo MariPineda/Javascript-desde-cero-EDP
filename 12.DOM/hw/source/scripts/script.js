@@ -41,11 +41,11 @@ function messageBot(messageBot){
     $contenedorMsj.appendChild(p)
     $contenedorMsj.scrollTop = $contenedorMsj.scrollHeight;
 }
-$btnClosedChat.addEventListener('click', () =>{
+$btnClosedChat.addEventListener('click', (e) =>{
     const chat = $('#chat')
     chat.classList.add('invisible')
 })
-$btnClosedChat.addEventListener('click', () =>{
+/*$btnClosedChat.addEventListener('click', () =>{
     const chat = $('#chat')
     chat.classList.remove('invisible')
-})
+})*/

@@ -60,7 +60,9 @@ btnRegistro.addEventListener('submit', (e)=> {
     }
 })
 
-
+module.exports = {
+    
+}
 
 
 /*const $ = selector=>document.querySelector(selector)
@@ -102,7 +104,7 @@ function Mal(mal){
         console.log("entró")
         p.innerText="1 a 40 chars"
     ]
-}
+}*/
 
 
 
